@@ -1,0 +1,14 @@
+{
+  "name": "homeworktwo",
+  "version": "1.0.0",
+  "description": "responsive and adaptive website with animation within navigational elements.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiersten Foulk",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+.aboutContainer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    .left {
+        max-width:500px;
+
+        background-image:url(../images/hero.jpg);
+    }
+    .right {
+        h4 {
+            text-align:left;
+        }
+    }
+}

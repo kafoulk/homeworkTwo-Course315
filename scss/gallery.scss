@@ -1,0 +1,129 @@
+.galCont{
+    // background-color:blue;
+    display:flex;
+    flex-direction:column;
+    width:100vw;
+    min-height:100vh;
+    margin:0 auto;
+    justify-content:space-evenly;
+    align-items:center;
+    align-content:center;
+    .rowOne {
+        display:flex;
+        width:80%;
+        margin:0 auto;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+        flex-direction:row;
+
+        .indBox {
+            // background-color: aqua;
+            width:75%;
+            display: flex;
+            margin:0 auto;
+            align-items:center;
+            align-content: center;
+            justify-content: center;
+            // position:relative;
+            img {
+                // position: absolute;
+            }
+            p {
+                // position: absolute;
+                width: 200px;
+                margin-left:10px;
+            }
+        }
+    }
+    .rowTwo {
+        display:flex;
+        width:80%;
+        margin:0 auto;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+        flex-direction:row;
+
+        .indBox {
+            // background-color: aqua;
+            width:75%;
+            display: flex;
+            margin:0 auto;
+            align-items:center;
+            align-content: center;
+            justify-content: center;
+            // position:relative;
+            img {
+                // position: absolute;
+            }
+            p {
+                // position: absolute;
+                width: 200px;
+                margin-left:10px;
+            }
+        }
+    }
+    .rowThree {
+        display:flex;
+        width:80%;
+        margin:0 auto;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+        flex-direction:row;
+
+        .indBox {
+            // background-color: aqua;
+            width:75%;
+            display: flex;
+            margin:0 auto;
+            align-items:center;
+            align-content: center;
+            justify-content: center;
+            // position:relative;
+            img {
+                // position: absolute;
+            }
+            p {
+                // position: absolute;
+                width: 200px;
+                margin-left:10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:960px) {
+    .galCont {
+        .rowOne {
+            flex-direction:column;
+            justify-content: space-evenly;
+            .indBox {
+                flex-direction:column;
+                p {
+                    width:80vw;
+                }
+            }
+        }
+        .rowTwo {
+            flex-direction:column;
+            justify-content: space-evenly;
+            .indBox {
+                flex-direction:column;
+                p {
+                    width:80vw;
+                }
+            }
+        }
+        .rowThree {
+            flex-direction:column;
+            justify-content: space-evenly;
+            .indBox {
+                flex-direction:column;
+                p {
+                    width:80vw;
+                }
+            }
+        }
+    }
+}
