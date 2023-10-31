@@ -1,16 +1,289 @@
-.aboutContainer {
+.aboutCont{
+    // background-color:blue;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    width:100vw;
+    min-height:100vh;
+    margin:0 auto;
+    justify-content:space-evenly;
     align-items:center;
-    
-    .left {
-        max-width:500px;
+    align-content:center;
+    .rowOne {
+        display:flex;
+        width:80%;
+        margin:0 auto;
+        justify-content:space-between;
+        align-items:center;
+        align-content:center;
+        flex-direction:row;
 
-        background-image:url(../images/hero.jpg);
+        .indBox {
+            // background-color: aqua;
+            width:25%;
+            flex-direction:column;
+            display: flex;
+            margin:0 auto;
+            align-items:center;
+            align-content: center;
+            justify-content: center;
+
+            .photo {
+                width:100%;
+                display: flex;
+                margin:0 auto;
+                align-items:center;
+                align-content: center;
+                justify-content: center;
+                img {
+                    display:flex;
+                    position:relative;
+                }
+                .buttonContainerTop {
+                    position:absolute;
+                    opacity:0;
+
+
+                    .button {
+                        background-color:darkblue;
+                        border-radius:30px;
+                        cursor:pointer;
+                        width:128px;
+                        height:42px;
+                        display:flex;
+                        color:white;
+                        justify-content:center;
+                        align-items: center;
+                    }
+                }
+
+            }
+            .photo:hover .buttonContainerTop {
+                opacity: 1;
+                position:absolute;
+            }
+            p {
+                // position: absolute;
+                width: 100%;
+                margin-top:10px;
+            }
+            .buttonContainer {
+                display:flex;
+                margin-bottom:50px;
+                
+
+                .button {
+                    background-color:darkblue;
+                    border-radius:30px;
+                    cursor:pointer;
+                    width:128px;
+                    height:42px;
+                    display:flex;
+                    color:white;
+                    justify-content:center;
+                    align-items: center;
+                    margin-left:10px;
+                }
+            }
+        }
     }
-    .right {
-        h4 {
-            text-align:left;
+    .rowTwo {
+        display:flex;
+        width:80%;
+        margin:0 auto;
+        justify-content:space-between;
+        align-items:center;
+        align-content:center;
+        flex-direction:row;
+
+        .indBox {
+            // background-color: aqua;
+            width:25%;
+            flex-direction:column;
+            display: flex;
+            margin:0 auto;
+            align-items:center;
+            align-content: center;
+            justify-content: center;
+            // position:relative;
+            .photo {
+                width:100%;
+                display: flex;
+                margin:0 auto;
+                align-items:center;
+                align-content: center;
+                justify-content: center;
+                img {
+                    display:flex;
+                    position:relative;
+                }
+                .buttonContainerTop {
+                    position:absolute;
+                    opacity:0;
+                    .button {
+                        background-color:darkblue;
+                        border-radius:30px;
+                        cursor:pointer;
+                        width:128px;
+                        height:42px;
+                        display:flex;
+                        color:white;
+                        justify-content:center;
+                        align-items: center;
+                        margin-left:10px;
+                    }
+                }
+                
+
+            }
+            .photo:hover .buttonContainerTop {
+                opacity: 1;
+                position:absolute;
+            }
+            p {
+                // position: absolute;
+                width: 100%;
+                margin-top:10px;
+            }
+            .buttonContainer {
+                display:flex;
+                margin-bottom:50px;
+                
+                .button {
+                    background-color:darkblue;
+                    border-radius:30px;
+                    cursor:pointer;
+                    width:128px;
+                    height:42px;
+                    display:flex;
+                    color:white;
+                    justify-content:center;
+                    align-items: center;
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+    .rowThree {
+        display:flex;
+        width:80%;
+        margin:0 auto;
+        justify-content:space-between;
+        align-items:center;
+        align-content:center;
+        flex-direction:row;
+
+        .indBox {
+            // background-color: aqua;
+            width:25%;
+            flex-direction:column;
+            display: flex;
+            margin:0 auto;
+            align-items:center;
+            align-content: center;
+            justify-content: center;
+            // position:relative;
+        
+            .photo {
+                width:100%;
+                display: flex;
+                margin:0 auto;
+                align-items:center;
+                align-content: center;
+                justify-content: center;
+                img {
+                    display:flex;
+                    margin:0 auto;
+                    position:relative;
+                
+                }
+                .buttonContainerTop {
+                    position:absolute;
+                    opacity: 0;
+                    .button {
+                        background-color:darkblue;
+                        border-radius:30px;
+                        cursor:pointer;
+                        width:128px;
+                        height:42px;
+                        display:flex;
+                        color:white;
+                        justify-content:center;
+                        align-items: center;
+                        margin-left:10px;        
+                    }
+                }
+            }
+            .photo:hover .buttonContainerTop {
+                opacity:1;
+            }
+        
+            p {
+                // position: absolute;
+                width:100%;
+                margin-top:10px;
+            }
+            .buttonContainer {
+                display:flex;
+                margin-bottom:50px;
+                .button {
+                    background-color:darkblue;
+                    border-radius:30px;
+                    cursor:pointer;
+                    width:128px;
+                    height:42px;
+                    display:flex;
+                    color:white;
+                    justify-content:center;
+                    align-items: center;
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+}    
+
+
+@media screen and (max-width:960px) {
+    .aboutCont {
+        .rowOne {
+            flex-direction:column;
+            justify-content: space-evenly;
+            .indBox {
+                flex-direction:column;
+                .photo .buttonContainerTop {
+                    opacity:1;
+                }
+
+                p {
+                    width:80vw;
+                }
+            }
+        }
+        .rowTwo {
+            flex-direction:column;
+            justify-content: space-evenly;
+            .indBox {
+                flex-direction:column;
+                .photo .buttonContainerTop {
+                    opacity:1;
+                }
+                p {
+                    width:80vw;
+                }
+            }
+        }
+        .rowThree {
+            flex-direction:column;
+            justify-content: space-evenly;
+            .indBox {
+                flex-direction:column;
+                .photo .buttonContainerTop {
+                    opacity:1;
+                }
+                p {
+                    width:80vw;
+                }
+            }
         }
     }
 }

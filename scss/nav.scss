@@ -1,5 +1,5 @@
 .navHolder {
-    position:fixed;
+    width: 80%;
     // left:10px;
     display: flex;
     margin:0 auto;
@@ -13,7 +13,7 @@
     width:90vw;
     height:10vh;
     background-image: url(../images/random-logo-black-and-white.png);
-    background-position:center;
+    background-position:left;
     background-repeat:no-repeat;
     background-size:contain;
     padding-bottom:5em;
@@ -71,8 +71,8 @@
 
 }
 
-.links.active {
-    height: 100vh;
+.links .active {
+    height: 50px;
     opacity:1;
     
 }
@@ -85,9 +85,9 @@
         height:0;
         opacity:0;
         flex-direction:column;
-        .links.active {
-            opacity:1;
-            height:100vh;
-        }
+    }
+    .links.active {
+        opacity:1;
+        height:100vh;
     }
 }

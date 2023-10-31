@@ -1,213 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 16px;
-}
-
-.navHolder {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: static;
-}
-
-.logo {
-  width: 90vw;
-  height: 10vh;
-  background-image: url(../images/random-logo-black-and-white.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 5em;
-  opacity: 1;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(linear), color-stop(top, left), color-stop(bottom, left), color-stop(from(rgb(0, 0, 0))), to(to(rgba(0, 0, 0, 0))));
-  -webkit-mask-image: linear-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
-          mask-image: -webkit-gradient(linear, left top, left bottom, from(linear), color-stop(top, left), color-stop(bottom, left), color-stop(from(rgb(0, 0, 0))), to(to(rgba(0, 0, 0, 0))));
-          mask-image: linear-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
-}
-
-.bars {
-  display: none;
-  margin-left: 50px;
-}
-
-.bars .bar {
-  display: block;
-  width: 25px;
-  margin: 0 auto;
-  margin: 5px 0;
-  background-color: black;
-  height: 3px;
-  border-radius: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.bars.active .bar:nth-child(1) {
-  -webkit-transform: translateY(8px) rotate(45deg);
-          transform: translateY(8px) rotate(45deg);
-}
-
-.bars.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.bars.active .bar:nth-child(3) {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-          transform: translateY(-8px) rotate(-45deg);
-}
-
-.links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
-  width: 100vw;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-transition: height 0.14s ease-in, opacity 0.16s ease-in, opacity 0.5s ease-out;
-  transition: height 0.14s ease-in, opacity 0.16s ease-in, opacity 0.5s ease-out;
-}
-.links a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: light;
-}
-
-.links .active {
-  height: 50px;
-  opacity: 1;
-}
-
-@media screen and (max-width: 960px) {
-  .bars {
-    display: block;
-  }
-  .links {
-    height: 0;
-    opacity: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .links.active {
-    opacity: 1;
-    height: 100vh;
-  }
-}
-.homeContainer {
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  position: relative;
-}
-.homeContainer #heroImage {
-  width: 100vw;
-  background-image: url(../images/AdobeStock_349641188.jpeg);
-  background-position: center center;
-  background-size: cover;
-  padding-bottom: 5em;
-  opacity: 1;
-  margin-top: 100px;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(linear), color-stop(top, left), color-stop(bottom, left), color-stop(from(rgb(0, 0, 0))), to(to(rgba(0, 0, 0, 0))));
-  -webkit-mask-image: linear-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
-          mask-image: -webkit-gradient(linear, left top, left bottom, from(linear), color-stop(top, left), color-stop(bottom, left), color-stop(from(rgb(0, 0, 0))), to(to(rgba(0, 0, 0, 0))));
-          mask-image: linear-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
-}
-.homeContainer #heroImage .headingText {
-  max-width: 90vw;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  color: white;
-}
-.homeContainer #heroImage .headingText h1 {
-  font-size: 145px;
-}
-.homeContainer #heroImage .headingText h4 {
-  max-width: 75vw;
-}
-.homeContainer .fillerText {
-  font-size: 14px;
-  width: 50vw;
-  min-height: 50vh;
-  margin-top: 50px;
-}
-
-@media screen and (max-width: 960px) {
-  .homeContainer {
-    margin-top: 50px;
-  }
-  .homeContainer #heroImage {
-    text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .homeContainer #heroImage .headingText h1 {
-    font-size: 36px;
-  }
-}
 .aboutCont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +38,8 @@ h1, h2, h3, h4, h5, h6, p {
           flex-direction: row;
 }
 .aboutCont .rowOne .indBox {
-  width: 25%;
+  background-color: aqua;
+  width: 200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -287,11 +78,14 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   position: relative;
 }
-.aboutCont .rowOne .indBox .photo .buttonContainerTop {
+.aboutCont .rowOne .indBox .photo img .buttonContainerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  opacity: 0;
+  width: 100%;
 }
-.aboutCont .rowOne .indBox .photo .buttonContainerTop .button {
+.aboutCont .rowOne .indBox .photo img .buttonContainerTop .button {
   background-color: darkblue;
   border-radius: 30px;
   cursor: pointer;
@@ -307,9 +101,6 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.aboutCont .rowOne .indBox .photo:hover .buttonContainerTop {
-  opacity: 1;
   position: absolute;
 }
 .aboutCont .rowOne .indBox p {
@@ -320,7 +111,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .aboutCont .rowOne .indBox .buttonContainer .button {
   background-color: darkblue;
@@ -399,11 +190,13 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   position: relative;
 }
-.aboutCont .rowTwo .indBox .photo .buttonContainerTop {
+.aboutCont .rowTwo .indBox .photo img .buttonContainerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  opacity: 0;
 }
-.aboutCont .rowTwo .indBox .photo .buttonContainerTop .button {
+.aboutCont .rowTwo .indBox .photo img .buttonContainerTop .button {
   background-color: darkblue;
   border-radius: 30px;
   cursor: pointer;
@@ -419,11 +212,6 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10px;
-}
-.aboutCont .rowTwo .indBox .photo:hover .buttonContainerTop {
-  opacity: 1;
-  position: absolute;
 }
 .aboutCont .rowTwo .indBox p {
   width: 100%;
@@ -433,7 +221,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .aboutCont .rowTwo .indBox .buttonContainer .button {
   background-color: darkblue;
@@ -510,14 +298,15 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   position: relative;
 }
-.aboutCont .rowThree .indBox .photo .buttonContainerTop {
+.aboutCont .rowThree .indBox .photo img .buttonContainerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  opacity: 0;
 }
-.aboutCont .rowThree .indBox .photo .buttonContainerTop .button {
+.aboutCont .rowThree .indBox .photo img .buttonContainerTop .button {
   background-color: darkblue;
   border-radius: 30px;
   cursor: pointer;
@@ -533,10 +322,6 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10px;
-}
-.aboutCont .rowThree .indBox .photo:hover .buttonContainerTop {
-  opacity: 1;
 }
 .aboutCont .rowThree .indBox p {
   width: 100%;
@@ -546,7 +331,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .aboutCont .rowThree .indBox .buttonContainer .button {
   background-color: darkblue;
@@ -568,7 +353,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 960px) {
-  .aboutCont .rowOne {
+  .galCont .rowOne {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -577,19 +362,16 @@ h1, h2, h3, h4, h5, h6, p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .aboutCont .rowOne .indBox {
+  .galCont .rowOne .indBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutCont .rowOne .indBox .photo .buttonContainerTop {
-    opacity: 1;
-  }
-  .aboutCont .rowOne .indBox p {
+  .galCont .rowOne .indBox p {
     width: 80vw;
   }
-  .aboutCont .rowTwo {
+  .galCont .rowTwo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -598,19 +380,16 @@ h1, h2, h3, h4, h5, h6, p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .aboutCont .rowTwo .indBox {
+  .galCont .rowTwo .indBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutCont .rowTwo .indBox .photo .buttonContainerTop {
-    opacity: 1;
-  }
-  .aboutCont .rowTwo .indBox p {
+  .galCont .rowTwo .indBox p {
     width: 80vw;
   }
-  .aboutCont .rowThree {
+  .galCont .rowThree {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -619,16 +398,13 @@ h1, h2, h3, h4, h5, h6, p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .aboutCont .rowThree .indBox {
+  .galCont .rowThree .indBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutCont .rowThree .indBox .photo .buttonContainerTop {
-    opacity: 1;
-  }
-  .aboutCont .rowThree .indBox p {
+  .galCont .rowThree .indBox p {
     width: 80vw;
   }
 }
