@@ -1,7 +1,7 @@
 {
-  "name": "homeworktwo",
+  "name": "homeworkfour",
   "version": "1.0.0",
-  "description": "responsive and adaptive website with animation within navigational elements.",
+  "description": "Mock Site with animated navigation",
   "main": "index.js",
   "directories": {
     "lib": "lib"

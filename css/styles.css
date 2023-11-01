@@ -286,6 +286,8 @@ h1, h2, h3, h4, h5, h6, p {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 100%;
+  max-height: 250px;
 }
 .aboutCont .rowOne .indBox .photo .buttonContainerTop {
   position: absolute;
@@ -398,6 +400,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 100%;
 }
 .aboutCont .rowTwo .indBox .photo .buttonContainerTop {
   position: absolute;
@@ -510,7 +513,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  width: 100%;
   position: relative;
 }
 .aboutCont .rowThree .indBox .photo .buttonContainerTop {
@@ -630,5 +633,176 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .aboutCont .rowThree .indBox p {
     width: 80vw;
+  }
+}
+.galCont {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.galCont .topRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+.galCont .topRow .infoBox img {
+  min-width: 20vw;
+}
+.galCont .topRow .infoBox p {
+  max-width: 40vw;
+}
+.galCont .bottomParagraph {
+  width: 80vw;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .galCont .topRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .galCont .topRow .infoBox img {
+    width: 100%;
+  }
+  .galCont .topRow .infoBox p {
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+}
+.contactContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contactContainer #createAccount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 30vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+.contactContainer #createAccount label {
+  text-align: left;
+  display: block;
+  width: 30vw;
+  margin-top: 20px;
+}
+.contactContainer #createAccount input {
+  margin-top: -20px;
+  display: block;
+  margin: 10px 0;
+  width: 30vw;
+  height: 50px;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+.contactContainer #createAccount input #submit {
+  margin: 0 50px;
+}
+.contactContainer #createAccount h1 {
+  margin-top: 50px;
+  text-align: left;
+}
+.contactContainer #signIn {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contactContainer #signIn img {
+  width: 200px;
+}
+.contactContainer #signIn label {
+  text-align: left;
+  display: block;
+  width: 30vw;
+  margin-top: 20px;
+}
+.contactContainer #signIn input {
+  margin-top: -20px;
+  display: block;
+  margin: 10px 0;
+  width: 30vw;
+  height: 50px;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+.contactContainer #signIn input #submit {
+  margin: 0 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90vw;
+  }
+  .contactContainer label {
+    min-width: 90vw;
+  }
+  .contactContainer input {
+    min-width: 90vw;
+  }
+  .contactContainer input .submit {
+    margin-bottom: 20px;
+  }
+  .contactContainer h1 {
+    min-width: 90vw;
+    text-align: center;
   }
 }

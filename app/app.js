@@ -8,6 +8,25 @@ function initListeners() {
         $(".bars").toggleClass("active");
         $(".links").toggleClass("active");
     });
+    $(".submit").click(function(e){
+        e.preventDefault();
+        let firstName = $("#fName").val();
+        let lastName = $("#lName").val();
+        console.log("inputs "+ firstName + lastName)
+    });
+    $("#edit").click(function(e){
+        e.preventDefault();
+
+        let userObj = {
+            fName: "Todd",
+            lName: "Shelton",
+        };
+
+        console.log(userObj);
+        $("#fName").val(userObj.fName);
+        $("#lName").val(userObj.lName);
+        // console.log("inputs "+ firstName + lastName)
+    });
 }
 
 function changeRoute () {
